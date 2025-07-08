@@ -11,6 +11,7 @@ Core Functionality:
 Running the Application:
 
 1.Compile the Java file:javac QuantumBookstoreTest.java
+
 2.Run the test class:java QuantumBookstoreTest
 
 Expected Output:
