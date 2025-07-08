@@ -74,6 +74,7 @@ class PaperBook extends book implements sellable{
     @Override
     public void DeliveryService(String address, String email, int quantity) {
         System.out.println("Delivering PaperBook to " + address + ". Confirmation sent to " + email);
+        //ShippingService.sendEmail(address, book."); placeholder for unimplemented Shipping service
     }
     
 }
@@ -106,6 +107,8 @@ class EBook extends book implements sellable{
     @Override
     public void DeliveryService(String address, String email, int quantity) {
         System.out.println("Sending EBook to " + email);
+         //EmailService.sendEmail(email, book."); placeholder for unimplemented mail service
+
     }
     
 }
@@ -208,6 +211,8 @@ public class QuantumBookstoreTest {
         store.removeBook("1");
         store.removeOutdatedBook(1, "3");
         store.removeBook("4");
+
+        
 
     }
 
